@@ -52,6 +52,14 @@ QuickResponseC2 is a Command and Control (C2) tool designed for offensive securi
    
 5. Enjoy! 
 
+## Demonstration
+
+<video width="640" height="480" controls>
+  <source src="Demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 ## Contribution
 
 Feel free to fork and contribute! Pull requests are welcome.
