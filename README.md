@@ -54,7 +54,11 @@ QuickResponseC2 is a Command and Control (C2) tool designed for offensive securi
 
 ## Demonstration
 
-<video src='https://github.com/kimd155/QuickResponseC2/raw/refs/heads/main/Demo.mp4' height=640 width=480 />
+
+
+https://github.com/user-attachments/assets/382e9350-d650-44e5-b8ef-b43ec90b315d
+
+
 
 ## Contribution
 
