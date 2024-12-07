@@ -1,10 +1,16 @@
 
 <p align="center">
-  <img src="logo.png" alt="QuickResponseC2" width="auto" height="200"/><br>
+  <img src="logo.png" alt="QuickResponseC2" width="auto" height="200"/><br><br>
 <a href="https://www.buymeacoffee.com/kimd155">
   <img src="https://i.ibb.co/TbX6GmK/bmc-button.png" alt="Buy me a coffee" width="130" height="auto"/>
 </a>
 </p>
+<div align="center">
+  <a href="https://github.com/kimd155/QuickResponseC2" target="_blank">
+    <img src="https://img.shields.io/static/v1?label=kimd155&message=QuickResponseC2&color=red&logo=github" alt="Go to GitHub repo" />
+  </a>
+</div>
+
 
 # QuickResponseC2
 QuickResponseC2 is a Command and Control (C2) tool designed for offensive security research, allowing for covert communication with a victim machine via QR codes. This tool enables security researchers and penetration testers to send commands to the victim system in an efficient and stealthy manner, leveraging QR codes as a medium for execution and response.
