@@ -1,5 +1,6 @@
 
 <p align="center">
+  <img src="logo.png" alt="QuickResponseC2" width="auto" height="200"/><br>
 <a href="https://www.buymeacoffee.com/kimd155">
   <img src="https://i.ibb.co/TbX6GmK/bmc-button.png" alt="Buy me a coffee" width="130" height="auto"/>
 </a>
@@ -39,15 +40,18 @@ QuickResponseC2 is a Command and Control (C2) tool designed for offensive securi
 
 ## Usage
 
-1. Start the C2 server.
-2. Input a command for the victim system.
-3. The victim scans the generated QR code, executes the command, and sends back the result as another QR code.
-4. The result is decoded and displayed.
+1. First, install the Dependencies -
+   `pip3 install -r requirements.txt`
+2. Then, run the main.py
+   `python3 main.py`
+3. Choose between the options:
+   
+   1 - Run the C2 Server
+   
+   2 - Build the Victim Implant
+   
+5. Enjoy! 
 
 ## Contribution
 
 Feel free to fork and contribute! Pull requests are welcome.
-
----
-
-Support the project: [Buy me a coffee](https://www.buymeacoffee.com/kimd155)
