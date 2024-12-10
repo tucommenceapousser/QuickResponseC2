@@ -13,7 +13,8 @@
 
 
 # QuickResponseC2
-QuickResponseC2 is a Command and Control (C2) tool designed for offensive security research, allowing for covert communication with a victim machine via QR codes. This tool enables security researchers and penetration testers to send commands to the victim system in an efficient and stealthy manner, leveraging QR codes as a medium for execution and response.
+QuickResponseC2 is a stealthy Command and Control (C2) framework that enables indirect and covert communication between the attacker and victim machines via an intermediate HTTP/S server. All network activity is limited to uploading and downloading images, making it an fully undetectable by IPS/IDS Systems and an ideal tool for security research and penetration testing.
+
 
 ## Capabilities:
 
@@ -65,7 +66,35 @@ QuickResponseC2 is a Command and Control (C2) tool designed for offensive securi
 https://github.com/user-attachments/assets/382e9350-d650-44e5-b8ef-b43ec90b315d
 
 
-## Flow
+## Workflow Overview
+
+### 1. **Initialization of the C2 Server**
+- The attacker launches QuickResponseC2, which creates a lightweight HTTP server (default port: `8080`).
+- This server serves as the intermediary between the attacker and victim, eliminating any direct connection between them.
+
+---
+
+### 2. **Command Delivery via QR Codes**
+- The attacker encodes a command into a QR code and saves it as `commandX.png` on the HTTP server.
+- The victim machine periodically polls the server (e.g., every 1 second) to check for the presence of a new command file.
+
+---
+
+### 3. **Victim Command Execution**
+- Once the victim detects a new QR code file (`commandX.png`), it downloads and decodes the image to retrieve the command.
+- The decoded command is executed on the victim’s system.
+
+---
+
+### 4. **Result Encoding and Uploading**
+- The victim encodes the output of the executed command into a QR code and saves it locally as `resultX.png`.
+- The result file is then uploaded to the HTTP server.
+
+---
+
+### 5. **Result Retrieval by the Attacker**
+- The attacker periodically checks the server for new result files (`resultX.png`).
+- Once found, the result file is downloaded and decoded to retrieve the output of the executed command.
 
 ![Flow](https://github.com/user-attachments/assets/25a092cb-2c80-4b39-bc7f-252ee8770679)
 
