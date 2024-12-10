@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/static/v1?label=kimd155&message=QuickResponseC2&color=red&logo=github" alt="Go to GitHub repo" /> <br/>
   </a>
   <div>
-  <a href="https://github.com/kimd155/QuickResponseC2#capabilities">Capabilities</a> - <a href="https://github.com/kimd155/QuickResponseC2#usage">Usage</a> - <a href="https://github.com/kimd155/QuickResponseC2#demonstration">Demonstration</a> - <a href="https://github.com/kimd155/QuickResponseC2#workflow-overview">Workflow Overview</a> - <a href="https://github.com/kimd155/QuickResponseC2#todo--contribution">TODO</a>
+  <a href="#capabilities">Capabilities</a> - <a href="#usage">Usage</a> - <a href="#demonstration">Demonstration</a> - <a href="#workflow-overview">Workflow Overview</a> - <a href="#todo--contribution">TODO</a>
   </div>
 </div>
 
